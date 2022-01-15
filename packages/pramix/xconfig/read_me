@@ -1,0 +1,23 @@
+XConfig Details
+
+After Install the package you must add helper.php file in your main composer.
+
+ "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+        },
+        "files": [
+          **********=> => "packages/pramix/xconfig/src/helpers/helper.php"
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+
+
+    **Package Functions**
+
+    getConfig('config_name') //get config value or array
+
+    getConfigValue('config_name') //get config value

@@ -1,0 +1,25 @@
+{
+    "name": "pramix/xmedia",
+    "description": "Package for Media Functions",
+    "authors": [
+        {
+            "name": "Praveen Chameera",
+            "email": "praveenchameera@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pramix\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pramix\\XMedia\\XMediaServiceProvider"
+            ]
+        }
+    }
+}

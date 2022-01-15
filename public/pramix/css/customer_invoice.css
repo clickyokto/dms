@@ -1,0 +1,113 @@
+body
+{
+    background-color: #f4f5f5;
+}
+
+#invoice_panel {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: #FFF;
+    border: 1px solid #E3E3E3;
+
+}
+
+#customer_payment_methods_logo_sidebar
+{
+    max-width: 145px;
+    margin-top: 15px;
+}
+
+#sidebar
+{
+    margin-top: 100px;
+}
+
+body{
+    background-image: url('bg_pattern.png');
+}
+
+#pay_now_btn
+{
+    margin-top: 25px;
+}
+
+#sub-floor {
+    color: #AAA;
+    background: #0c1d2c!important;
+    padding: 10px 0px;
+}
+
+.navbar-inverse {
+    background-color: #0c1d2c!important;
+    border-color: #080808;
+}
+
+label {
+   font-size: 12px;
+    font-weight: 500;
+}
+
+.logo
+{
+    max-width: 192px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#invoice_panel p {
+    margin: 0 0 5px;
+    font-size: 13px;
+}
+
+#invoice_panel .h1,#invoice_panel .h2,#invoice_panel .h3,#invoice_panel h1,#invoice_panel h2,#invoice_panel h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sidebar_or_label
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#sidebar p
+{
+   font-size: 12px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #072e50;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+body
+{
+    font-size: 13px;
+}
+
+.select2 {
+
+    border-radius: 0px !important;
+}
+
+
+
+.select2-container--bootstrap .select2-selection{
+    border-radius: 0px !important;
+
+}
+
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #cccccc !important;
+    border-radius: 0px !important;
+    height: 34px !important;
+}
+.select2-default {
+    color: #999 !important;
+    width: auto !important;
+}

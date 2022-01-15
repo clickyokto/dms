@@ -1,0 +1,24 @@
+{
+    "name": "pramix/xemail_sender",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Shamila Chathuranga",
+            "email": "Shamila.e.c.f@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pramix\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pramix\\XEmailSender\\EmailSenderProvider"
+            ]
+        }
+    }
+}

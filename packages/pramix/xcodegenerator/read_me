@@ -1,0 +1,33 @@
+XConfig Details
+
+After Install the package you must add helper.php file in your main composer.
+
+ "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+        },
+        "files": [
+          **********=> => "packages/pramix/xcodegenerator/src/helpers/helper.php"
+        ],
+
+    },
+
+
+    **Package Functions**
+
+
+    formText($label, $name, $value = '', $parameters_array = [])
+    formPassword($label, $name, $value = '', $parameters_array = [])
+    formEmail($label, $name, $value = '', $parameters_array = [])
+    formNumber($label, $name, $value = '', $parameters_array = [])
+    formDate($label, $name, $value = '', $parameters_array = [])
+    formDropdown($label, $name,$options_array = [], $value = '', $parameters_array = [])
+
+
+{{formText(__('xproduct::product.labels.product_name_code'),'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+{{formPassword(__('xproduct::product.labels.product_name_code'),'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+{{formEmail(__('xproduct::product.labels.product_name_code'),'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+{{formNumber(__('xproduct::product.labels.product_name_code'),'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+{{formDate(__('xproduct::product.labels.product_name_code'),'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+{{formDropdown(__('xproduct::product.labels.product_name_code'),$products_array,'product_code', $product->item_code ?? '', array('class' => 'form-control', 'id' => 'product_code')  )}}
+

@@ -1,0 +1,24 @@
+{
+    "name": "pramix/xinventory",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Praveen Chameera",
+            "email": "praveenchameera@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pramix\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pramix\\XInventory\\InventoryServiceProvider"
+            ]
+        }
+    }
+}

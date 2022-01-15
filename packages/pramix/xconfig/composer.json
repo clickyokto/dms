@@ -1,0 +1,25 @@
+{
+    "name": "pramix/xconfig",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Praveen Chameera",
+            "email": "praveenchameera@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Pramix\\XConfig\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pramix\\XConfig\\XConfigServiceProvider"
+            ]
+        }
+    }
+}

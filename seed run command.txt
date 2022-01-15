@@ -1,0 +1,10 @@
+*Don't delete DatabaseSeeder.php
+
+To get Seed Files: 	php artisan iseed configurations,users,model_has_permissions,model_has_roles,permissions,roles,role_has_permissions,cities,configuration_category,districts,product,product_categories,supplier,customer,vehicle_types
+
+To clear Database: 	php artisan migrate:refresh
+After Deleting: 	composer dump-autoload
+To restore : 		php artisan db:seed
+
+
+

@@ -1,0 +1,101 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+
+    "require": {
+        "php": "^7.2",
+        "barryvdh/laravel-dompdf": "^0.8.5",
+        "biscolab/laravel-recaptcha": "^4.0",
+        "darryldecode/cart": "^4.2",
+        "doctrine/dbal": "^2.10",
+        "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.5",
+        "intervention/image": "^2.5",
+        "laravel/framework": "^7.0",
+        "laravel/tinker": "^2.0",
+        "laravelcollective/html": "^6.0",
+        "maatwebsite/excel": "^3.1",
+        "monarobase/country-list": "^2.1",
+        "orangehill/iseed": "^2.6",
+        "propaganistas/laravel-phone": "^4.2",
+        "spatie/laravel-permission": "^3.2",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "laravel/ui": "^2.0",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Pramix\\XCustomer\\": "packages/pramix/",
+            "Pramix\\XProduct\\": "packages/pramix/",
+            "Pramix\\XInvoice\\": "packages/pramix/",
+            "Pramix\\XPurchaseOrder\\": "packages/pramix/",
+            "Pramix\\Templates\\": "packages/pramix/",
+            "Pramix\\XConfig\\": "packages/pramix/",
+            "Pramix\\XUser\\": "packages/pramix/",
+            "Pramix\\XGeneral\\": "packages/pramix/",
+            "Pramix\\XGRN\\": "packages/pramix/",
+            "Pramix\\XEmailSender\\": "packages/pramix/",
+            "Pramix\\XPayment\\": "packages/pramix/",
+            "Pramix\\XCodeGenerator\\": "packages/pramix/",
+            "Pramix\\XMedia\\": "packages/pramix/",
+            "Pramix\\XBranches\\": "packages/pramix/",
+            "Pramix\\XInventory\\": "packages/pramix/",
+            "Pramix\\XReports\\": "packages/pramix/",
+            "Pramix\\XCommunication\\": "packages/pramix/",
+            "Pramix\\XCart\\": "packages/pramix/"
+        },
+        "files": [
+            "packages/pramix/xconfig/src/helpers/helper.php",
+            "app/Http/helpers.php",
+            "packages/pramix/xcodegenerator/src/helpers/helper.php",
+            "packages/pramix/xgeneral/src/helpers/helper.php"
+
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}
